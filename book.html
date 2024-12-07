@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Travel</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="book.html">Book Now</a></li>
+        </ul>
+    </nav>
+
+    <section class="booking-section">
+        <div class="booking-form-container">
+            <h2>Book Your Travel Now</h2>
+            <form action="submit_form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="place">Destination Place</label>
+                    <input type="text" id="place" name="place" required placeholder="Enter destination place">
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Contact Number</label>
+                    <input type="tel" id="contact" name="contact" required placeholder="Enter your contact number">
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Submit Booking</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
